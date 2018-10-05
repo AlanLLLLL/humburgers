@@ -1,0 +1,23 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "vue-app1-install": "npm install --prefix vue-app1",
+    "vue-app1":"npm start --prefix vue-app1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev":"concurrently \"npm run server\" \"npm run vue-app1\""
+  },
+  "author": "Alan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.15",
+    "nodemon": "^1.18.4"
+  }
+}
